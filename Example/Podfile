@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PLMSideMenu_Example', :exclusive => true do
+  pod 'PLMSideMenu', :path => '../'
+end
+
+target 'PLMSideMenu_Tests', :exclusive => true do
+  pod 'PLMSideMenu', :path => '../'
+
+  
+end
