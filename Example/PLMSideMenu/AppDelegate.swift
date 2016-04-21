@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PLMSideMenu
 //
-//  Created by tatsuhiro kanai on 04/21/2016.
+//  Created by Tatsuhiro Kanai on 04/21/2016.
 //  Copyright (c) 2016 tatsuhiro kanai. All rights reserved.
 //
 

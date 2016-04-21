@@ -1,0 +1,24 @@
+{
+  "name": "PLMSideMenu",
+  "version": "0.1.0",
+  "summary": "A short description of PLMSideMenu.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PLMSideMenu",
+  "license": "MIT",
+  "authors": {
+    "tatsuhiro kanai": "kanai.tatsuhiro@adways.net"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PLMSideMenu.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PLMSideMenu/Classes/**/*",
+  "resource_bundles": {
+    "PLMSideMenu": [
+      "PLMSideMenu/Assets/*.png"
+    ]
+  }
+}

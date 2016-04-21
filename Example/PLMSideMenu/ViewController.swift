@@ -2,13 +2,14 @@
 //  ViewController.swift
 //  PLMSideMenu
 //
-//  Created by tatsuhiro kanai on 04/21/2016.
-//  Copyright (c) 2016 tatsuhiro kanai. All rights reserved.
+//  Created by Tatsuhiro Kanai on 04/21/2016.
+//  Copyright (c) 2016 Tatsuhiro Kanai. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +21,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /** Button Tapped
+     */
+    @IBAction func didTapSideMenuButton(sender:AnyObject?)
+    {
+        if self.navigationController?.isSideMenuOpen() == true
+        {
+            self.navigationController?.hideSideMenuView()
+        }else{
+            self.navigationController?.showSideMenuView()
+        }
+    }
+    
+    
 }
 

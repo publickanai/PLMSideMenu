@@ -1,0 +1,6 @@
+framework module PLMSideMenu {
+  umbrella header "PLMSideMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

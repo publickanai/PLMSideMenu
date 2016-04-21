@@ -1,0 +1,6 @@
+framework module Pods_PLMSideMenu_Tests {
+  umbrella header "Pods-PLMSideMenu_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

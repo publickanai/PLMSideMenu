@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D2C49FCCC8630572EDECA399 /* Pods_PLMSideMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC93F40F320C0D973454DFB /* Pods_PLMSideMenu_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E7FAABB21CC87DCF0050F4BA /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAABB11CC87DCF0050F4BA /* MainNavigationController.swift */; };
+		E7FAABB41CC8A9C90050F4BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAABB31CC8A9C90050F4BA /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BDFA52D2E9CA8DEA640028E6 /* PLMSideMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PLMSideMenu.podspec; path = ../PLMSideMenu.podspec; sourceTree = "<group>"; };
 		CABBF86FCFE7D362E4D62C48 /* Pods-PLMSideMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLMSideMenu_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLMSideMenu_Tests/Pods-PLMSideMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC93F40F320C0D973454DFB /* Pods_PLMSideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLMSideMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FAABB11CC87DCF0050F4BA /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E7FAABB31CC8A9C90050F4BA /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for PLMSideMenu */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				66994E4B9427E6E6C2963A0E /* Pods */,
@@ -99,17 +103,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for PLMSideMenu */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				E7FAABB11CC87DCF0050F4BA /* MainNavigationController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E7FAABB31CC8A9C90050F4BA /* MenuViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for PLMSideMenu";
+			name = Example;
 			path = PLMSideMenu;
 			sourceTree = "<group>";
 		};
@@ -359,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FAABB21CC87DCF0050F4BA /* MainNavigationController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E7FAABB41CC8A9C90050F4BA /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
