@@ -12,21 +12,21 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 import PLMSideMenu module.
 
-```ruby
+```swift
 import PLMSideMenu
 ```
 
 
 Define your Navigation Controller class with PLMSideMenuNavigationController.
 
-```
+```swift
 class MainNavigationController: PLMSideMenuNavigationController, PLMSideMenuDelegate , UINavigationControllerDelegate
 {
 ```
 
 Setup SideMenu
 
-```
+```swift
 override func viewDidLoad()
 {
     super.viewDidLoad()
@@ -61,8 +61,32 @@ private func setupSideMenu()
 PLMSideMenu is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```
+```ruby
 pod "PLMSideMenu"
+```
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod "PLMSideMenu"
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
 ```
 
 ## Author
