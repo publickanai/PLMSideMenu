@@ -20,6 +20,7 @@ public class PLMSideMenuNavigationController: UINavigationController, PLMSideMen
     
     /** Init
      */
+    
     required public init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
@@ -29,9 +30,10 @@ public class PLMSideMenuNavigationController: UINavigationController, PLMSideMen
     {
         super.init(nibName: nil, bundle: nil)
         
-        // setup ContentViewController
+        // set ContentViewController to self.viewControllers
         
-        if (contentViewController != nil) {
+        if (contentViewController != nil)
+        {
             self.viewControllers = [contentViewController!]
         }
         
@@ -42,25 +44,29 @@ public class PLMSideMenuNavigationController: UINavigationController, PLMSideMen
         view.bringSubviewToFront(navigationBar)
     }
     
+    /** ViewController LifeCycle
+     */
+    
+    public override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    
     public override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /** ViewController LifeCycle
-     */
-    
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     /** PLMSideMenuProtocol
      */
+     
     //  var sideMenu
+    
     public var sideMenu : PLMSideMenu?
     
     // set ContentViewController
+    
     public func setContentViewController( contentViewController: UIViewController)
     {
         self.sideMenu?.toggleMenu()
@@ -81,6 +87,7 @@ public class PLMSideMenuNavigationController: UINavigationController, PLMSideMen
     }
     
     // Transition
+    
     public func pushContentViewController(contentViewController: UIViewController)
     {
         self.sideMenu?.hideSideMenu()

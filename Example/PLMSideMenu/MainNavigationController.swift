@@ -9,31 +9,25 @@
 import UIKit
 import PLMSideMenu
 
-class MainNavigationController:PLMSideMenuNavigationController, PLMSideMenuDelegate , UINavigationControllerDelegate {
+class MainNavigationController: PLMSideMenuNavigationController, PLMSideMenuDelegate , UINavigationControllerDelegate
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // set UINavigationControllerDelegate
         self.delegate = self
         self.setupSideMenu()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    /** SetupSideMenu
+    /** Setup SideMenu
      */
     private func setupSideMenu()
     {
-        // setup SideMenu
-        
-        self.sideMenu = PLMSideMenu(sourceView: self.view, menuViewController: MenuViewController(), menuPosition:.Right)
-        sideMenu?.delegate = self // optional
-        sideMenu?.menuWidth = 180.0 // optional, default is 160
-        sideMenu?.bouncingEnabled = false
+        // init with sideMenu's parent view and MenuVIewController
+        self.sideMenu       = PLMSideMenu( sourceView : self.view , menuViewController : MenuViewController(), menuPosition:.Right)
+        sideMenu?.delegate  = self // optional, PLMSideMenuDelegate
+        sideMenu?.menuWidth = 180.0 // custom SideMenu Width, default is 160
         //sideMenu?.allowSwipeOpen = true
         
         // make navigation bar showing over side menu
@@ -61,6 +55,11 @@ class MainNavigationController:PLMSideMenuNavigationController, PLMSideMenuDeleg
     
     func sideMenuDidOpen() {
         print("Main SideMenu Delegate sideMenuDidOpen")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     /** UINavigationController Delegate Method
